@@ -1,5 +1,50 @@
-$c-bg: #efefef;
-$c-alt: #e41612;
-$c-text: #444;
+:root {
+    /* Colors*/
+    --color-primary: #F8E3CE;
+    --color-H3: #A1766D;
+    --color-Texte: #633116;
+    --color-H2: #D96B52;
+    --color-secondary: #D9C667;
+    --color-trois: #E3B09D;
 
-$size-text: 18px;
+    /* Colors degradé*/
+    --color-quatre: #D3B0AD;
+    --color-cinq: #AA7989;
+    --color-six: #935574;
+
+    /* Font Families */
+    --titre: "dynapuff-condensed", sans-serif; ;
+    --texte: "shantell-sans-normal", sans-serif;
+    
+    
+    /* Font Sizes */
+    // Mobile
+    --H2: 25px;
+    --H3: 33px;
+    --H4: 21px;
+    --Texte: 16px;
+    --copy: 15px;
+
+    // Tab
+    --H2-tab: 27px;
+    --H3-tab: 37px;
+    --H4-tab: 25px;
+    --Texte-tab: 18px;
+    --copy-tab: 17px;
+
+    // Desktop
+    --H2-ordi: 34px;
+    --H3-ordi: 50px;
+    --H4-ordi: 28px;
+    --Texte-ordi: 20px;
+    --copy-ordi: 19px;
+
+    /* Font Weights */
+    --weight-regular: 400;
+    --weight-bold: 700;
+
+
+    /* Font Line Heights */
+    --titre-line-height: 1.2;
+    --texte-line-height: 1.4;
+}

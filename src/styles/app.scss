@@ -1,3 +1,116 @@
 @import 'utils/variables';
 @import 'components/type';
 
+body{
+    background-color: var(--color-primary);
+}
+
+h2{
+    color: var(--color-H2);
+    line-height: var(--titre-line-height);
+    font-family: var(--titre);
+    font-size: var(--H2);
+    font-weight: var(--weight-regular);
+}
+
+h3{
+    color: var(--color-H3);
+    line-height: var(--titre-line-height);
+    font-family: var(--titre);
+    font-size: var(--H3);
+    font-weight: var(--weight-regular);
+}
+
+h4{
+    color: var(--color-H3);
+    line-height: var(--titre-line-height);
+    font-family: var(--titre);
+    font-size: var(--H4);
+    font-weight: var(--weight-regular);
+}
+
+p{
+    color: var(--color-Texte);
+    line-height: var(--texte-line-height);
+    font-family: var(--texte);
+    font-size: var(--Texte);
+    font-weight: var(--weight-regular);
+}
+
+a{
+    color: var(--color-primary);
+    line-height: var(--texte-line-height);
+    font-family: var(--titre);
+    font-size: var(--Texte);
+    font-weight: var(--weight-regular);
+}
+
+.color_paragraphe{
+    color: var(--color-primary);
+}
+
+footer{
+    background-color: var(--color-Texte);
+}
+
+    /* ------- MEDIA QUERIES ------- */
+
+
+/* Tablet */
+
+@media (min-width: 834px) {
+
+    h2{
+    font-size: var(--H2-tab);
+}
+
+h3{
+    font-size: var(--H3-tab);
+
+}
+
+h4{
+    font-size: var(--H4-tab);
+
+}
+
+p{
+    font-size: var(--Texte-tab);
+}
+
+a{
+    font-size: var(--Texte-tab);
+
+}
+
+
+}
+
+/* Ordi */
+
+@media (min-width: 1280px) {
+
+    h2{
+    font-size: var(--H2-ordi);
+}
+
+h3{
+    font-size: var(--H3-ordi);
+
+}
+
+h4{
+    font-size: var(--H4-ordi);
+
+}
+
+p{
+    font-size: var(--Texte-ordi);
+}
+
+a{
+    font-size: var(--Texte-ordi);
+
+}
+}
+
