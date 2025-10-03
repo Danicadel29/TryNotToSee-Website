@@ -3,6 +3,33 @@
 
 body{
     background-color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.bg_image{
+    background-image: url('../assets/images/Home_background@2x 1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 46vh;
+    width: 100%;
+
+}
+
+.logo{
+    width: 46%;
+    height: auto;
+    top: 15%;
+    position: relative;
+    margin: 8px;
+
 }
 
 h2{
@@ -45,12 +72,95 @@ a{
     font-weight: var(--weight-regular);
 }
 
+.title_section{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+}
+
 .color_paragraphe{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-primary);
+    background: url(../assets/images/noise-min.png), linear-gradient(to bottom, var(--color-six), var(--color-cinq), var(--color-primary));
+    
+    width: 100%;
+    height: 100px;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+
+.logo_nav{
+    width: 15%;
+    height: 5%;
+    position: relative;
+
+}
+
+.Ligne_nav{
+    display: block;
+    background-color: var(--color-secondary);
+    width: 100vw;
+    height: 2px;
+    margin: 8px;
+    align-self: center;
+    border-radius: 15px;
+}
+
+.Ligne_deco{
+    display: block;
+    background-color: var(--color-trois);
+    width: 100vw;
+    height: 2px;
+    margin: 8px;
+    align-self: center;
+    border-radius: 15px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+
+}
+
+.menu_footer{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a{
+    text-decoration: none;
 }
 
 footer{
     background-color: var(--color-Texte);
+}
+
+.logo_footer{
+    display: flex;
+    width: 15%;
+    height: 5%;
+    position: relative;
+    margin: auto;
+
 }
 
     /* ------- MEDIA QUERIES ------- */
