@@ -163,6 +163,79 @@ footer{
 
 }
 
+.perso1{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #d6b2a6; /* couleur du fond rond */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: auto;
+    padding: 8px;
+}
+
+.img_perso1{
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+
+}
+
+button{
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: #A1766D 4px 4px 7px -1px;
+}
+
+.section_mal { 
+    position: relative;
+}
+
+.section_mal::before {
+  content: "";
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  left: 50%; 
+  transform: translateX(-50%);
+  background: var(--color-secondary);
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.section_mal > * { 
+    position: relative;
+    z-index: 1; 
+}
+
+.section_borne { 
+    position: relative;
+}
+
+.section_borne::before {
+  content: "";
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  left: 50%; 
+  transform: translateX(-50%);
+  background: var(--color-trois);
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.section_borne > * { 
+    position: relative;
+    z-index: 1; 
+}
     /* ------- MEDIA QUERIES ------- */
 
 
