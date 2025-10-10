@@ -15,6 +15,7 @@
     <!-- LINKS -->
     <link rel="icon" href="assets/images/logo.svg">
     <link rel="stylesheet" href="styles/app.css">
+    <script src="scripts/app.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/htn3ttz.css">
    <link rel="stylesheet" href="https://use.typekit.net/htn3ttz.css">
     <!-- TITLE -->
@@ -36,7 +37,7 @@
 
         <span class="Ligne_nav"></span>
 
-        <div>
+        
           <ul class="menu">
             <li>
                 <a href="" >Concept</a>
@@ -51,7 +52,7 @@
                 <a href="">Borne</a>
             </li>
           </ul>
-        </div>
+        
 
       </nav>
 
@@ -79,13 +80,19 @@
 
         <h3>Approche créative</h3>
 
-        <p>Le processus de création de notre jeu à démarré suite à une observation : il reste encore trop de difficulté à vivre “normalement” dans la vie de tous les jours en tant que personne en situation de handicap. Alors, dans une démarche de sensibilisation, nous avons créé un jeu basé sur les problèmes quotidiens de ces personnes désavantagées.</p>
+        <div class="text-container collapsed">
 
-        <p>Pour représenter fidèlement ces complications, nous nous sommes concentrés sur un type de handicap spécifique. Ici, dans le cas de notre jeu, il s’agit de la malvoyance.</p>
+          <p>Le processus de création de notre jeu à démarré suite à une observation : il reste encore trop de difficulté à vivre “normalement” dans la vie de tous les jours en tant que personne en situation de handicap. Alors, dans une démarche de sensibilisation, nous avons créé un jeu basé sur les problèmes quotidiens de ces personnes désavantagées.</p>
 
-        <p>Et quoi de mieux pour se rendre compte des contraintes des malvoyants, que de se mettre dans leurs peaux? Dans « Try Not To See », découvrez le quotidien de ces personnes malvoyantes qui ne bénéficient pas d’un appareil de correction optique, et relevez le défi en moins de temps possible ! Via 3 niveaux distincts, testez votre réactivité, votre sens de l’observation et votre réflexion, avec pour contrainte, une vue diminuée.</p>
+          <p>Pour représenter fidèlement ces complications, nous nous sommes concentrés sur un type de handicap spécifique. Ici, dans le cas de notre jeu, il s’agit de la malvoyance.</p>
 
-        <button>Voir Plus</button>
+          <p>Et quoi de mieux pour se rendre compte des contraintes des malvoyants, que de se mettre dans leurs peaux? Dans « Try Not To See », découvrez le quotidien de ces personnes malvoyantes qui ne bénéficient pas d’un appareil de correction optique, et relevez le défi en moins de temps possible ! Via 3 niveaux distincts, testez votre réactivité, votre sens de l’observation et votre réflexion, avec pour contrainte, une vue diminuée.</p>
+
+        </div>
+
+        <div class="btn">
+            <button id="voir-plus-btn">Voir Plus</button>
+        </div>
 
       </section>
 
@@ -167,23 +174,24 @@
       <div>
           <ul class="menu_footer">
             <li>
-                <a href="" >Danica</a>
+                <a>Danica</a>
             </li>
             <li>
-                <a href="">Alyssa</a>
+                <a>Alyssa</a>
             </li>
             <li>
-                <a href="">Thomas</a>
+                <a>Thomas</a>
             </li>
             <li>
-                <a href="">Maxime</a>
+                <a>Maxime</a>
             </li>
           </ul>
         </div>
+        <span class="Ligne_Footer"></span>
 
         <!-- Credits -->
-       <div>
-        <p>© 2025</p>
+       <div class="copy">
+        <span >© 2025</span>
       </div>
 
     </footer>
