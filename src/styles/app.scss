@@ -70,6 +70,7 @@ p{
     font-size: var(--Texte);
     font-weight: var(--weight-regular);
     margin-bottom: 16px;
+    margin-top: 0;
 }
 
 a{
@@ -310,6 +311,10 @@ footer{
     position: relative;
     z-index: 1; 
 }
+
+.niveaux{
+    display: none;
+}
     /* ------- MEDIA QUERIES ------- */
 
 
@@ -317,7 +322,7 @@ footer{
 
 @media (min-width: 834px) {
 
-    h2{
+h2{
     font-size: var(--H2-tab);
 }
 
@@ -439,6 +444,27 @@ body{
 }
 }
 
+.btn-scroll{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 48px;
+    justify-content: flex-end;
+    align-items: center; 
+
+    img{
+    width: 20px;
+    height: auto;
+    }
+}
+
+.section_borne{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+
+}
 }
 
 
@@ -447,27 +473,117 @@ body{
 
 @media (min-width: 1280px) {
 
-    h2{
+h2{
     font-size: var(--H2-ordi);
 }
 
 h3{
     font-size: var(--H3-ordi);
+    margin-bottom: 32px;
 
 }
 
 h4{
     font-size: var(--H4-ordi);
+    margin-bottom: 48px;
 
 }
 
 p{
     font-size: var(--Texte-ordi);
+    margin-bottom: 24px;
 }
 
 a{
     font-size: var(--Texte-ordi);
 
+}
+
+.bg_image{
+    height: 110vh;
+
+    .logo{
+    top: 12%;
+    margin: 32px;
+
+    }
+
+}
+
+.nav{
+    padding: 32px;
+
+    .Ligne_nav{
+    height: 4px;
+    margin: 32px;
+    }
+
+    .menu{
+    gap: 32px;
+
+    }
+}
+
+.color_paragraphe{
+    height: 250px;
+
+}
+
+.title_section{
+    gap: 32px;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.section-intro{
+    gap: 120px;
+    align-items: center;
+    justify-content: flex-end;
+
+ .perso1{
+    width: 16vw;
+    height: 475px;
+    }
+}
+
+
+.section_mal{
+    width: 750px;
+}
+
+.section_mal::before{
+     width: 140%;
+}
+
+.niveaux{
+    gap: 96px;
+
+    .img-niveau{
+    width: 440px;
+    border-radius: 24px;
+
+}
+}
+
+.btn-scroll{
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.section_borne{
+    width: 750px;
+    margin-bottom: 96px;
+
+}
+.section_borne::before{
+     width: 140%;
+     height: 115%;
+     
+
+}
+
+.text-container{
+    width: 700px;
 }
 }
 
