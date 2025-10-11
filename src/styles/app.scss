@@ -328,6 +328,8 @@ h3{
 
 h4{
     font-size: var(--H4-tab);
+    margin-top: 0%;
+    margin-bottom: 24px;
 
 }
 
@@ -344,7 +346,7 @@ a{
     height: 80vh;
 
     .logo{
-    top: 16%;
+    top: 10%;
     margin: 16px;
 
     }
@@ -412,6 +414,29 @@ body{
 
 .btn {
     display: none;
+}
+
+.section_mal{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+}
+
+.niveaux{
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+
+    .img-niveau{
+    width: 280px;
+    height: auto;
+    border-radius: 16px;
+    border: solid 4px var(--color-secondary);
+    box-shadow: #A1766D 4px 4px 7px -1px;
+    margin-bottom: 32px;
+
+}
 }
 
 }
