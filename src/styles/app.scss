@@ -13,16 +13,14 @@ body{
     }
 }
 
-
-
 .bg_image{
-    background-image: url('../assets/images/Animation-bg_1.mp4');
+    background-image: url('../assets/images/Home_background@2x 1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 40vh;
-    width: 100%;
+    object-fit: fill;
     margin-top: 0;
+    height: clamp(80vh, 100vh, 120vh);
 
     .logo{
     width: 46%;
@@ -34,7 +32,6 @@ body{
     }
 
 }
-
 
 
 h2{
@@ -75,13 +72,22 @@ p{
     margin-top: 0;
 }
 
-a{
+.nav_a, .footer_a{
     color: var(--color-primary);
     line-height: var(--texte-line-height);
     font-family: var(--titre);
     font-size: var(--Texte);
     font-weight: var(--weight-regular);
     text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+.nav li:hover {
+    transform: scale(1.2);
+}
+
+.nav_a:hover{
+    color: var(--color-secondary);
 }
 
 .title_section{
@@ -318,12 +324,21 @@ footer{
     gap: 16px;
     justify-content: center;
 
+    
     .img-niveau{
-    width: 180px;
-    border: solid 3px var(--color-secondary);
-    border-radius: 24px;
+        width: 180px;
+        border: solid 3px var(--color-secondary);
+        border-radius: 24px;
+        
+        &:hover{
+            border: solid 3px var(--color-H2);
+            rotate: -3deg;
 
-}
+        }
+
+        }
+        
+
 
 }
 
@@ -428,7 +443,8 @@ a{
 }
 
 .bg_image{
-    height: 80vh;
+    /* height: 80vh; */
+    height: clamp(100vh, 110vh, 120vh);
 
     .logo{
     top: 10%;
@@ -606,7 +622,8 @@ a{
 }
 
 .bg_image{
-    height: 110vh;
+    /* height: 110vh; */
+    height: clamp(100vh, 110vh, 120vh);
 
     .logo{
     top: 12%;
