@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const voirPlusBtn = document.getElementById('voir-plus-btn');
     const textContainer = document.querySelector('.text-container');
     let isOpen = false;
- 
-    voirPlusBtn.addEventListener('click', function(e) {
+
+    if (voirPlusBtn){
+        voirPlusBtn.addEventListener('click', function(e) {
         e.preventDefault();
  
         if (!textContainer) return;
@@ -21,4 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         isOpen = !isOpen;
     });
+    }
+ 
 });
