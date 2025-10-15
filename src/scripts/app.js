@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         voirPlusBtn.addEventListener('click', function(e) {
         e.preventDefault();
  
-        if (!textContainer) return;
+        if (!textContainer);
 
         if (isOpen) {
             // Masquer le texte
