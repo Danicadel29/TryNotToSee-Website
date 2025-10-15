@@ -25,3 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
  
 });
+
+
+//ANIMATION SCROLL
+ 
+const faders = document.querySelectorAll('.animate');
+ 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+});
+ 
+faders.forEach(el => observer.observe(el));
