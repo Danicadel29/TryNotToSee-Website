@@ -1,5 +1,11 @@
 'use strict';
 
+/* import { gsap } from 'gsap'; 
+
+import { ScrollTrigger } from 'gsap/ScrollTrigger'; 
+
+gsap.registerPlugin(ScrollTrigger);  */
+
 document.addEventListener('DOMContentLoaded', function() {
     const voirPlusBtn = document.getElementById('voir-plus-btn');
     const textContainer = document.querySelector('.text-container');
@@ -24,19 +30,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     }
  
-});
+}); 
 
 
 //ANIMATION SCROLL
  
-const faders = document.querySelectorAll('.animate');
- 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
+/* 
+const txtAnim = document.querySelectorAll('.section__animate--el'); 
+
+txtAnim.forEach(element => {
+  gsap.from( txtAnim, {
+	scrollTrigger: {
+    trigger: '.section__animate', 
+    start: 'top 80%', 
+    toggleActions: "restart reset restart reset", 
+  }, 
+  x: -70, 
+  opacity: 0,
+  stagger: 0.3,
+  duration: 0.7,
+  ease: "power2.out"
 });
- 
-faders.forEach(el => observer.observe(el));
+});
+ */
