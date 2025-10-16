@@ -56,7 +56,7 @@ gsap.from('.section__animate--el', {
   scrollTrigger: {
     trigger: '.section__animate', // çac'est ton déclencheur (tu peux check aussi en activant markers)
     start: 'top 80%', 
-    markers: true, // tu peux décommenter si tu veux debug ton anim ça te permettra de checker ton start stvque ça commence à 30% par ex
+    /* markers: true, */ // tu peux décommenter si tu veux debug ton anim ça te permettra de checker ton start stvque ça commence à 30% par ex
     toggleActions: "restart reset restart reset", // pas vraiment besoin de modif ça sauf si tu veux changer d'anim 
   },
   x: -70, // pas vraiment besoin de changer vu que tu pars de l'opacité 0 

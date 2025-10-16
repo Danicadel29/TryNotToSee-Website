@@ -16,10 +16,8 @@ body{
     background-image: url('../assets/images/Home_background@2x 1.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    object-fit: fill;
-    margin-top: 0;
-    height: clamp(80vh, 100vh, 120vh);
+    background-position: center bottom;
+    height: clamp(25vh, 33vh, 65vh);
 
     .logo{
         width: 46%;
@@ -339,7 +337,7 @@ footer{
 
     
     .img-niveau{
-        width: 180px;
+        width: 100%;
         border: solid 3px var(--color-secondary);
         border-radius: 24px;
         
@@ -431,13 +429,11 @@ h2{
 
 h3{
     font-size: var(--H3-tab);
-
 }
 
 h4{
     font-size: var(--H4-tab);
     margin-top: 0%;
-
 }
 
 p{
@@ -446,12 +442,11 @@ p{
 
 a{
     font-size: var(--Texte-tab);
-
 }
 
 .bg_image{
-    /* height: 80vh; */
-    height: clamp(100vh, 110vh, 120vh);
+    background-position: right bottom;
+    height: clamp(85vh, 105vh, 120vh);
 
     .logo{
         top: 10%;
@@ -580,7 +575,6 @@ body{
 
 .page_niveaux{
     
-
     .margin{
         margin-top: 48px;
     }
@@ -611,12 +605,11 @@ body{
 .footer{
     margin-top: 112px;
 }
-
 }
 
 
 
-/* Ordi */
+/* Ordi --------------------------------------------------------------------------------------------*/
 
 @media (min-width: 1280px) {
 
@@ -627,12 +620,10 @@ h2{
 h3{
     font-size: var(--H3-ordi);
     margin-bottom: 32px;
-
 }
 
 h4{
     font-size: var(--H4-ordi);
-
 }
 
 p{
@@ -642,16 +633,15 @@ p{
 
 a{
     font-size: var(--Texte-ordi);
-
 }
 
 .bg_image{
-    /* height: 110vh; */
-    height: clamp(100vh, 110vh, 120vh);
+    background-position: center bottom;
+    height: clamp(105vh, 125vh, 150vh);
 
     .logo{
-    top: 12%;
-    margin: 32px;
+        top: 12%;
+        margin: 32px;
     }
 }
 
