@@ -22,11 +22,11 @@ body{
     height: clamp(80vh, 100vh, 120vh);
 
     .logo{
-        width: 46%;
+        width: 50%;
         height: auto;
-        top: 10%;
+        top: 22%;
         position: relative;
-        margin: 8px;
+        margin: 16px;
     }
 }
 
@@ -38,18 +38,6 @@ body{
     }
 }
 
-/* .animate{
-    animation: textanim 2s ease forwards;
-    transform: translate(-70%);
-    opacity: 0;
-}
-
-.animate.visible{
-    animation: textanim 2s ease forwards;
-    transform: translate(0%);
-    opacity: 1;
-}
- */
 h2{
     color: var(--color-H2);
     line-height: var(--titre-line-height);
@@ -66,6 +54,10 @@ h3{
     font-weight: var(--weight-regular);
     margin-bottom: 24px;
     margin-top: 0;
+}
+
+.titre__Niveau{
+    color: var(--color-secondary);
 }
 
 h4{
@@ -454,7 +446,7 @@ a{
     height: clamp(100vh, 110vh, 120vh);
 
     .logo{
-        top: 10%;
+        top: 15%;
         margin: 16px;
     }
 }
@@ -650,7 +642,7 @@ a{
     height: clamp(100vh, 110vh, 120vh);
 
     .logo{
-    top: 12%;
+    top: 7%;
     margin: 32px;
     }
 }
