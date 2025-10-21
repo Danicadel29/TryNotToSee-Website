@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //ANIMATION SCROLL
 
-
+document.querySelectorAll('.section__animate').forEach(section => {
 // je t'aimis des commentaires pour qu'est ce qui fait quoi :) 
-gsap.from('.section__animate--el', {
+ gsap.from(section.querySelectorAll('.section__animate--el'), {
   scrollTrigger: {
-    trigger: '.section__animate', // çac'est ton déclencheur (tu peux check aussi en activant markers)
+    trigger: section, // çac'est ton déclencheur (tu peux check aussi en activant markers)
     start: 'top 80%', 
     /* markers: false, */ // tu peux décommenter si tu veux debug ton anim ça te permettra de checker ton start stvque ça commence à 30% par ex
     toggleActions: "restart reset restart reset", // pas vraiment besoin de modif ça sauf si tu veux changer d'anim 
@@ -48,6 +48,8 @@ gsap.from('.section__animate--el', {
   duration: 0.7,
   ease: "power2.out"
 });
+})
+
 
 // tu peux garder la même logique pour les autres animations et sinon tient voila la doc ou alors tu me demandes et je regarde^^
 // https://gsap.com/docs/v3/GSAP/gsap.effects
