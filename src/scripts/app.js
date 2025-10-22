@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //ANIMATION SCROLL
 
-document.querySelectorAll('.section__animate').forEach(section => {
+document.querySelectorAll('.section__animate').forEach(section => { //selection de toute les class
 // je t'aimis des commentaires pour qu'est ce qui fait quoi :) 
  gsap.from(section.querySelectorAll('.section__animate--el'), {
   scrollTrigger: {
