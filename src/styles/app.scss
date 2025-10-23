@@ -13,20 +13,21 @@ body{
 }
 
 .bg_image{
-    background-image: url('../assets/images/Home_background@2x 1.webp');
+    background-image: url('../assets/images/Animation-bg copy 2@2x 1.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     object-fit: fill;
     margin-top: 0;
-    height: clamp(80vh, 100vh, 120vh);
+    height: clamp(100vh, 120vh, 200vh);
 
     .logo{
-        width: 50%;
+        display: block;
+        width: 70%;
         height: auto;
-        top: 22%;
+        top: 10%;
         position: relative;
-        margin: 16px;
+        margin: auto;
     }
 }
 
@@ -37,6 +38,8 @@ body{
         transform: translateX(0%);
     }
 }
+
+
 
 h2{
     color: var(--color-H2);
@@ -451,11 +454,12 @@ a{
 }
 
 .bg_image{
-    /* height: 80vh; */
+    background-image: url('../assets/images/Home_background@2x 1.webp');
     height: clamp(100vh, 110vh, 120vh);
 
     .logo{
-        top: 15%;
+        width: 50%;
+        top: 21%;
         margin: 16px;
     }
 }
@@ -660,7 +664,7 @@ a{
     height: clamp(100vh, 110vh, 120vh);
 
     .logo{
-    top: 7%;
+    top: 5%;
     margin: 32px;
     }
 }
