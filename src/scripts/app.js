@@ -38,14 +38,14 @@ document.querySelectorAll('.section__animate').forEach(section => { //selection 
  gsap.from(section.querySelectorAll('.section__animate--el'), {
   scrollTrigger: {
     trigger: section, // çac'est ton déclencheur (tu peux check aussi en activant markers)
-    start: 'top 80%', 
+    start: 'top 90%', 
     /* markers: false, */ // tu peux décommenter si tu veux debug ton anim ça te permettra de checker ton start stvque ça commence à 30% par ex
-    toggleActions: "restart reset restart reset", // pas vraiment besoin de modif ça sauf si tu veux changer d'anim 
+    toggleActions: "restart ", // pas vraiment besoin de modif ça sauf si tu veux changer d'anim 
   },
   x: -70, // pas vraiment besoin de changer vu que tu pars de l'opacité 0 
   opacity: 0, // l'effet sort de nul part
   stagger: 0.4, // le delais entre les section__animate--el 
-  duration: 0.7,
+  duration: 0.5,
   ease: "power2.out"
 });
 })
