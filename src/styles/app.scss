@@ -12,6 +12,11 @@ body{
     }
 }
 
+.paragraphe__niveaux{
+    color: var(--color-primary);
+
+}
+
 .bg_image{
     background-image: url('../assets/images/Animation-bg copy 2@2x 1.webp');
     background-size: cover;
@@ -350,11 +355,7 @@ footer{
     z-index: 0;
     width: 100vw;
     overflow: hidden; 
-    background-image: url('../assets/images/Lvl01_background.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-color: var( --color-H2);
     
     .margin{
         margin-top: 0%;
@@ -369,18 +370,15 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(15px);
+    filter: blur(20px);
     transform: scale(1.06);
     z-index: -100;
+    opacity: 65%;
+    
 }
 
-.page_niveaux::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: #ffffff(0, 0, 0, 0.1);
-    filter: blur(15px);
-    z-index: -99;
+.paragraphe__niveaux {
+    color: white;
 }
 
 .section_niveaux{
